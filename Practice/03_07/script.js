@@ -51,5 +51,7 @@ console.log("The Hifi Tower Specification:", hifiTower["speakers"]);
 console.log("Dinner Table:", dinnerTable);
 console.log("TV specification:", tv);
 
+console.log(dinnerTable);
+
 
 
