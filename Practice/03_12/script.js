@@ -7,36 +7,15 @@
  * - Test the objecs by calling their properties and using their methods in the console.
  */
 
+import Dogs from "./Dogs.js";
 
- const elmo = {
-    type: "doggo",
-    color: "Czorny Blond",
-    changeColor: function(colorChange) {  
-      this.elmo.color = colorChange;
-    },
-    size: "Medium",
-    age: 4,
-    paws: {
-      front: 2,
-      back: 2,
-    },
-  
-  };
-  
-  console.log("my dog Elmo: ", elmo);
+ const elmo = new Dogs(
+   "Kokoni",
+   "Czorny Blond",
+   "Medium",
+   4,
+   2,
+   2,
+ );
 
-
-
-  const laptopElko = {
-
-    color: "white",
-    batteryLife: "15h",
-    weight: "1kg",
-    powerStatus: true,
-    changeStatus: function(powerONOff){
-      this.laptop.powerStatus = powerONOff;
-    },
-
-  };
-
-  console.log("this is my laptop Elko: ", laptopElko);
+ console.log("Elmo the Dog:", elmo);

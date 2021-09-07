@@ -26,9 +26,6 @@ const backpack = {
 };
 
 
-
-
-
 const house = {
   floors: 4,
   color: "Magnolia",
@@ -57,39 +54,23 @@ const house = {
   },
 };
 
+console.log("here is my house:", house);
 
-const car = {
-  color: "White",
-  productionYear: 2004,
-  make: "Peugeot",
-  doorsNumbs: 5,
 
-  speed: {
-    min: 10,
-    max: 100,
+const szafa = {
+  kolor: "czarny",
+  rozmiar: {
+    dlugosc: 20,
+    szerokosc: 30,
+    glebokosc: 70
   },
-
-  speakers: {
-    leftSpeakers: {
-      front: 1,
-      back: 1,
-    },
-    rightSpeakers: {
-      front: 1,
-      right: 1,
-    },
+  zmienRozmiar: function(zmienDlugosc, zmienSzerokosc, zmienGlebokosc) {
+    this.rozmiar.dlugosc = zmienDlugosc;
+    this.rozmiar.szerokosc = zmienSzerokosc;
+    this.rozmiar.glebokosc = zmienGlebokosc;
   },
-
-  changeSpeakers: function(frontLeft, frontRight) {
-    this.speakers.leftSpeakers.front = frontLeft;
-    this.speakers.rightSpeakers.front = frontRight;
-  },
-
-
+  rokProdukcji: 2019,
+  miastoProdukcji: "Katowice",
 };
 
-console.log("here is my car:", car);
-
-
-
-console.log("here is my house:", house);
+console.log("Szafa:", szafa);

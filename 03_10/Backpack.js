@@ -16,7 +16,7 @@ class Backpack {
     strapLengthR,
     lidOpen
   ) {
-    // Define properties:
+    // Defines properties:
     this.name = name;
     this.volume = volume;
     this.color = color;
