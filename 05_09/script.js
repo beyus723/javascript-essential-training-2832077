@@ -7,7 +7,7 @@
 import Backpack from "./Backpack.js";
 
 const everydayPack = new Backpack(
-  "Everyday Backpack",
+  "Everyday green",
   30,
   "grey",
   15,
@@ -19,11 +19,11 @@ const everydayPack = new Backpack(
 );
 
 const content = `
-  <article class="backpack" id="everyday">
+
     <figure class="backpack__image">
       <img src=${everydayPack.image} alt="" />
     </figure>
-    <h1 class="backpack__name">${everydayPack.name}</h1>
+    <h5 class="backpack__name">${everydayPack.name}</h5>
     <ul class="backpack__features">
       <li class="packprop backpack__volume">Volume:<span> ${
         everydayPack.volume
@@ -45,9 +45,14 @@ const content = `
         everydayPack.lidOpen
       }</span></li>
     </ul>
-  </article>
+
 `;
 
 const main = document.querySelector(".maincontent");
 
-main.innerHTML = content;
+var newArticle = document.createElement("article");
+newArticle.classList.add("backpack");
+newArticle.setAttribute("id", "everyday");
+newArticle.innerHTML = content;
+
+main.append(newArticle);
